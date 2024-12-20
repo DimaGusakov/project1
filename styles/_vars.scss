@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+$font-basic: "Manrope",sans-serif;
+$font-footer:"Inter",sans-serif;
+$red-color: #F84646;
+$white-color: #fff;
+$black-color: #000;
+$color-text: #808080;
+$title-color: #2E2E2E;
+$text-color: #F4F5F7;
+$color-disable: #E6E6E6;
+
+
+@mixin button($padding: 10px 20px, $border-radius: 5px, $font-family: $font-basic, $background-color: $red-color){
+  padding: $padding;
+  border-radius: $border-radius;
+  font-family: $font-family;
+  background-color:$background-color;
+}
+
+@mixin font-style($font-size: 14px, $font-weight: 700, $line-height: 20px, $color: $black-color){
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+}
+
